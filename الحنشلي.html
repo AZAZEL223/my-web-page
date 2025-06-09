@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحنشلي للصرافة والتحويلات</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .ad-board {
+            direction: rtl; /* Ensure right-to-left layout for Arabic content */
+            background-color: #ffffff;
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            max-width: 900px; /* Increased max-width for a broader board */
+            width: 100%;
+            padding: 2.5rem; /* Increased padding */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem; /* Space between sections */
+            border: 5px solid #FFD700; /* Gold border for a premium feel */
+        }
+        .logo-container {
+            margin-bottom: 1.5rem;
+        }
+        .logo {
+            width: 180px; /* Larger logo */
+            height: auto;
+            border-radius: 0.75rem; /* Slightly rounded logo */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for logo */
+        }
+        .company-name {
+            font-size: 2.75rem; /* Larger font size */
+            font-weight: 700;
+            color: #1A5276; /* Dark blue for prominence */
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .slogan {
+            font-size: 2rem; /* Larger slogan */
+            font-weight: 600;
+            color: #28a745; /* Green for trust/money */
+            margin-bottom: 2rem;
+            line-height: 1.4;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid for features */
+            gap: 1.5rem;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+        .feature-item {
+            background-color: #e6f7ff; /* Light blue background for features */
+            padding: 1.25rem;
+            border-radius: 1rem; /* Rounded corners for features */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+            color: #004085; /* Darker blue text */
+            font-size: 1.15rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-align: right; /* Align text to the right for RTL */
+        }
+        .icon {
+            font-size: 1.8rem; /* Larger icon */
+            color: #007bff; /* Bright blue for icons */
+        }
+        .contact-info {
+            font-size: 1.25rem;
+            color: #555;
+            margin-top: 1rem;
+        }
+        @media (max-width: 768px) {
+            .company-name {
+                font-size: 2.2rem;
+            }
+            .slogan {
+                font-size: 1.6rem;
+            }
+            .feature-item {
+                font-size: 1rem;
+            }
+            .logo {
+                width: 150px;
+            }
+            .ad-board {
+                padding: 1.5rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .company-name {
+                font-size: 1.8rem;
+            }
+            .slogan {
+                font-size: 1.3rem;
+            }
+            .feature-item {
+                font-size: 0.9rem;
+            }
+            .logo {
+                width: 120px;
+            }
+            .ad-board {
+                padding: 1rem;
+            }
+        }
+    </style>
+    <!-- Phosphor Icons for a modern look -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/dist/phosphor.js"></script>
+</head>
+<body>
+    <div class="ad-board">
+        <div class="logo-container">
+            <img src="alhanshali.jpeg"
+                 alt="شعار الحنشلي للصرافة والتحويلات"
+                 class="logo"
+                 onerror="this.onerror=null;this.src='https://placehold.co/180x180/E0E0E0/808080?text=شعار+الشركة';">
+            <!-- Fallback placeholder image in case the provided image fails to load -->
+        </div>
+
+        <h1 class="company-name">الحنشلي للصرافة والتحويلات</h1>
+        <p class="slogan">أموالك بأمان... تحويلاتك بثقة</p>
+
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="ph-bold ph-lightning icon"></i>
+                <span>تحويلات مالية سريعة وفورية</span>
+            </div>
+            <div class="feature-item">
+                <i class="ph-bold ph-shield-check icon"></i>
+                <span>أمان وموثوقية في كل معاملة</span>
+            </div>
+            <div class="feature-item">
+                <i class="ph-bold ph-currency-dollar icon"></i>
+                <span>أفضل أسعار الصرف التنافسية</span>
+            </div>
+            <div class="feature-item">
+                <i class="ph-bold ph-globe icon"></i>
+                <span>شبكة واسعة من التحويلات الدولية</span>
+            </div>
+            <div class="feature-item">
+                <i class="ph-bold ph-fingerprint-simple icon"></i>
+                <span>خدمات شخصية تلبي احتياجاتك</span>
+            </div>
+            <div class="feature-item">
+                <i class="ph-bold ph-clock-counter-clockwise icon"></i>
+                <span>خبرة طويلة في مجال الصرافة</span>
+            </div>
+        </div>
+
+        <p class="contact-info">
+            لخدماتكم على مدار الساعة، تواصلوا معنا:
+            <br>
+            <span class="font-bold">هاتف:</span> ٩٦٧٧٧٧٦٥٤٣٢١+ | <span class="font-bold">الموقع:</span> www.alhanshali.com (مثال)
+        </p>
+    </div>
+</body>
+</html>
